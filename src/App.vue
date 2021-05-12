@@ -2,7 +2,7 @@
   <div>
     <div id="app">
       <div id="details">
-        <h1 class="title">Tic <span class="flicker">app</span> Toe</h1>
+        <h1 class="title">Tic <span class="flicker"> APP </span> Toe</h1>
       </div>
       <grid></grid>
       <button class="restart" @click="restart">Restart</button>
