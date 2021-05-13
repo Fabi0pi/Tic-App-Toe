@@ -93,6 +93,11 @@ export default {
     // changes the active player to the non-active player with the help of the nonActivePlayer computed property
     changePlayer() {
       this.activePlayer = this.nonActivePlayer;
+      // we want the state to tell us which player should make the next move
+      if (this.gameStatus !== "win" && this.gameStatus !== "draw") {
+        this.gameStatusMessage = `${this.activePlayer}'s turn`;
+        return;
+      } else return this.gameStatus;
     },
     // checks for possible win conditions from the data
     checkForWin() {
